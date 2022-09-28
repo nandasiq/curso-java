@@ -1,0 +1,16 @@
+package fundamentos;
+
+public class NotacaoPonto {
+	
+	public static void main(String[] args) {
+		
+		String s = "Vamos brilhar nesse curso!";
+		s = s.toUpperCase();
+		s = s.replace("!", ",");
+		s = s.concat(" p*rra!");
+
+
+		System.out.println(s);
+	}
+
+}
