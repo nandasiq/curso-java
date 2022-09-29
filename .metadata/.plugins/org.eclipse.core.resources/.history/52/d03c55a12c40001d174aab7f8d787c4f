@@ -1,0 +1,18 @@
+package fundamentos;
+
+public class Console {
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.print("Amar");
+		System.out.print(" vc e bom demais!\n\n");
+		
+		System.out.println("amar ");
+		System.out.println("ao vivo, entao");
+		
+		System.out.printf("Deputado federal: %d Deputado estadudal: %d Senador: %d Governador: %d Presidente %d", 1234, 55678, 651, 13, 13);
+		
+	}
+
+}
