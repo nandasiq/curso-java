@@ -22,7 +22,7 @@ public class DeltaBhaskara {
         double c = entrada.nextDouble();
         
         double delta = Math.pow(b, 2) - 4 * a * c;
-        System.out.printf("Delta e igual a: %.2f\n", delta);
+        System.out.println(delta);
         
         double x1 = ( -b + Math.sqrt(delta)) / 2 * a;
         System.out.printf("X1 vale %.2f", x1);
