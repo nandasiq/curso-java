@@ -1,0 +1,35 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class DesafioCalculadora {
+
+	// ler num1, num2 e operdor
+	public static void main(String[] args) {
+		
+		System.out.println("Favor inserir numero 1, numero 2 e operador (+ - * / %)");
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("\nnumero 1: ");
+		String num1 = entrada.next();
+		double n1 = Double.parseDouble(num1);
+		System.out.println(n1);
+		
+		System.out.println("\nnumero 2: ");
+		String num2 = entrada.next();
+		double n2 = Double.parseDouble(num2);
+		System.out.println(n2);
+		
+		
+		System.out.println("\noperador: ");
+		String operador = entrada.next();
+		System.out.println(operador);
+		
+		
+		
+		
+		entrada.close();
+	}
+	
+}

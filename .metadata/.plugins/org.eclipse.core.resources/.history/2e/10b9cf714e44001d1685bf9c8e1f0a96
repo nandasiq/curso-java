@@ -1,0 +1,13 @@
+package fundamentos;
+
+public class DesafioCalculadora {
+
+	// ler num1, num2 e operdor
+	public static void main(String[] args) {
+		
+		System.out.println("Favor inserir numero 1, numero 2 e operador (+ - * / %)");
+		
+		
+	}
+	
+}

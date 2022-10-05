@@ -14,8 +14,11 @@ public class StringEquals {
 		
 		Scanner entrada = new Scanner(System.in);
 		String s1 = entrada.next();
-		System.out.println("2" == s1.trim()); //trim para tirar espaco em branco. mas next faz isso automatico
-		System.out.println("2".equals(s1));
+		System.out.println("2" == s1.trim());
+		System.out.println("2".equals(s1.trim()));
+		
+		int teste = entrada.next();
+		System.out.println(teste);
 		
 		entrada.close();
 		
