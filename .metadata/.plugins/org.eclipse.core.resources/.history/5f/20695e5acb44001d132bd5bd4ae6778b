@@ -16,7 +16,7 @@ public class CalculaImc {
         System.out.println("Digite sua altura em metros: ");
         double altura = entrada.nextDouble();
         
-        double imc = peso / Math.pow(altura, 2);
+        double imc = peso / (altura*altura);
         System.out.printf("Seu IMC e: %.2f", imc);
         
         entrada.close();
