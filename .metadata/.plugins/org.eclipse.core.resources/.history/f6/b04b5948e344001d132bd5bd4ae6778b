@@ -29,8 +29,6 @@ public class DeltaBhaskara {
         
         double x2 = ( -b - Math.sqrt(delta) ) / 2 * a;
         System.out.printf("\nX2 vale %.2f", x2);
-        
-        entrada.close();
     }
 
 }
