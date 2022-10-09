@@ -12,13 +12,10 @@ public class DoWhile {
         do {
             System.out.println("Palavras magicas");
             System.out.println("Quer sair?");
-            palavra = entrada.nextLine();
             
         } while(!palavra.equalsIgnoreCase("Por favor"));
         
-        System.out.println("Obrigada");
 
-        
         entrada.close();
 
         
