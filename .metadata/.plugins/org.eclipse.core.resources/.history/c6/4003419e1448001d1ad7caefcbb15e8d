@@ -1,0 +1,37 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DesafioWhile {
+    
+    public static void main(String[] args) {
+        
+        // nota de 10 - 0
+        // total armazena todas as notas
+        // contador de notas validas
+        // fazer a media
+        // usuario digitar -1 sai
+        
+        Scanner entrada = new Scanner(System.in);
+
+        //System.out.println("Digite a nota:");
+        double nota;
+        int quantidadeNota = 0;
+        double total =  0;
+        
+        do {
+            System.out.println("Digite a nota");
+            nota = entrada.nextDouble();
+            total =+ nota;
+            quantidadeNota ++;
+        } while (nota != -1);
+        
+        double media = total / quantidadeNota;
+        System.out.printf("Sua media e: %.2f", media);
+        
+
+        entrada.close();
+
+    }
+
+}
