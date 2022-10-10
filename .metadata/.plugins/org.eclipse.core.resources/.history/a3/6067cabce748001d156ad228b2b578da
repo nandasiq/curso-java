@@ -23,18 +23,13 @@ public class DesafioWhile {
         do {
             System.out.println("Digite a nota");
             nota = entrada.nextDouble();
-            
-            if (nota >= 0 && nota <= 10) {
-                
-                quantidadeNota ++;
-                total = total + nota;
-                
-            } else if (nota < -1 || nota > 10) {
-                
-              System.out.println("nota invalida, digite novamente");
-              nota = entrada.nextDouble();  
+            if (nota < 0 || nota > 10) {
+                System.out.println("nota invalida, digite novamente");
+             //   nota = entrada.nextDouble();      
+            } else {
+            total = total + nota;
+            quantidadeNota ++;
             }
-            
         } while (nota != -1);
         
         double media = total / quantidadeNota;
