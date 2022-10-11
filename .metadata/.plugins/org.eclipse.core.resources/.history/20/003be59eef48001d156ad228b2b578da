@@ -12,11 +12,6 @@ public class DesafioWhile {
         // fazer a media
         // usuario digitar -1 sai
         
-        //CODIGO COM BUG, RESOLUCAO CERTA EM DesafioWhileProf
-        // o bug acontece pq quando o usuario digita a nota errada
-        // mais de uma vez,mo codigo volta para DO. Logo a alternativa correta 
-        // seria usar so o WHILE ao inves do DO/WHILE, como na solucao do prof
-        
         Scanner entrada = new Scanner(System.in);
 
         //System.out.println("Digite a nota:");
@@ -47,7 +42,6 @@ public class DesafioWhile {
         
 
         entrada.close();
-        
 
     }
 
