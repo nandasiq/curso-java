@@ -1,0 +1,17 @@
+package controle.exercicios;
+
+import java.util.Scanner;
+
+public class De1a10Par {
+
+
+    Scanner entrada = new Scanner(System.in);
+
+    int n = entrada.nextInt();
+    syso
+
+    entrada.close();
+
+
+
+}

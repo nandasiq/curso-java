@@ -1,0 +1,18 @@
+package controle.exercicios;
+
+
+import java.util.Date;
+import java.time.Year;
+
+
+public class AnoBissexto {
+    
+    public static void main(String[] args) {
+        int days = Year.of(2022).length();
+        System.out.println(days);
+        
+    }
+    
+    
+
+}
