@@ -1,0 +1,28 @@
+package controle;
+
+import java.util.Scanner;
+
+public class SwitchBreak {
+    
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+
+                
+        String conceito = "";
+        int nota =  entrada.nextInt();
+        
+        switch(nota) {
+            case 10:
+                conceito ="A";
+            break;
+            case 8:
+                conceito = "B";
+            break;
+        }
+        
+        System.out.println("Conceito e: " + conceito);
+    }
+
+        entrada.close();
+}
