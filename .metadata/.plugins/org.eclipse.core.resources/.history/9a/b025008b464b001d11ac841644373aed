@@ -15,10 +15,5 @@ public class Data {
         String dataPadrao = d.concat("/").concat(m).concat("/").concat(a);
         return dataPadrao;
     }
-
-    String obterDataFormatada() {
-        return String.format("%d/%d/%d", dia, mes, ano);
-    }
-    
     
 }
