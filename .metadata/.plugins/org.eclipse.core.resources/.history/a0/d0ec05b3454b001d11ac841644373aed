@@ -12,7 +12,7 @@ public class Data {
         String m = String.valueOf(mes);
         String a = String.valueOf(ano);
         
-        String dataPadrao = d.concat("/").concat(m).concat("/").concat(a);
+        String dataPadrao = dataPadrao.concat(d).concat("/").concat(m).concat("/").concat(a);
         return dataPadrao;
     }
     

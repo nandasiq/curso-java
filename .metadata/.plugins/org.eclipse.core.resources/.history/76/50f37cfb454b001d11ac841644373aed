@@ -18,6 +18,6 @@ public class DataTeste {
                 + "\nData 2 %d/%d/%d.", d1.dia, d1.mes, d1.ano, 
                 d2.dia, d2.mes, d2.ano);
         
-        System.out.printf("\n%s.", d2.obterData());
+        System.out.println(d2.obterData());
     }
 }
