@@ -10,9 +10,9 @@ public class DataTeste {
         d1.ano = 1992;
         
         var d2 = new Data();
-//        d2.dia = 31;
-//        d2.mes = 05;
-//        d2.ano = 1968;
+        d2.dia = 31;
+        d2.mes = 05;
+        d2.ano = 1968;
         
         System.out.printf("Data 1 %d/%d/%d."
                 + "\nData 2 %d/%d/%d.", d1.dia, d1.mes, d1.ano, 
