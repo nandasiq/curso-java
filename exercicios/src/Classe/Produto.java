@@ -1,10 +1,10 @@
-package Classe;
+package classe;
 
 public class Produto {
 
     String nome;
     double preco;
-    double desconto;
+    static double desconto = 0.25;
 
     Produto(String nomeInicial, double precoInicial){
         
@@ -23,7 +23,7 @@ public class Produto {
     
     double precoComDesconto(double descontoGerente) {
        
-        return preco * (1 - desconto + descontoGerente);
+        return preco * (1 - desconto - descontoGerente);
     }
     
     double precoComDesconto() {

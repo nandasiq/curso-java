@@ -1,12 +1,15 @@
-package Classe;
+package classe;
 
 public class Data {
 
-    int dia = 1;
-    int mes = 1;
-    int ano = 1970;
+    int dia;
+    int mes;
+    int ano;
     
     Data (){
+        dia = 1;
+        mes = 1;
+        ano = 1970;
     }
     
     Data (int dia1, int mes1, int ano1){
