@@ -24,6 +24,7 @@ public class Data {
     }
     
     String obterData (){
+        
         String d = String.valueOf(dia);
         String m = String.valueOf(mes);
         String a = String.valueOf(ano);
@@ -31,4 +32,7 @@ public class Data {
         String dataPadrao = d.concat("/").concat(m).concat("/").concat(a);
         return dataPadrao;
     }
+    
+    
+    
 }
