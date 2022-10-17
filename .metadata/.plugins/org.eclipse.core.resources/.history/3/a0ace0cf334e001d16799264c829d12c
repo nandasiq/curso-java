@@ -15,7 +15,7 @@ public class DataTeste {
 //        d2.ano = 1968;
         
         var d3 = new Data(29, 12, 1997);
-        System.out.println(d3.obterData());
+        System.out.println(d3.obterDataFormatada());
         
         System.out.printf("Data 1 %d/%d/%d."
                 + "\nData 2 %d/%d/%d.", d1.dia, d1.mes, d1.ano, 
