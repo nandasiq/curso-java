@@ -10,7 +10,7 @@ public class Data {
 //        dia = 1;
 //        mes = 1;
 //        ano = 1970;
-        this.(1, 1, 1970);
+        this(1, 1, 1970);
     }
     
     Data (int dia, int mes, int ano){
@@ -21,9 +21,11 @@ public class Data {
     
     
     String obterDataFormatada() {
-        return String.format("%d/%d/%d", dia, mes, ano);
+        String formato = "%d/%d/%d";
+        return String.format(formato, dia, mes, ano);
     }
     
+    // meu jeito de resolver o problema acima.
     String obterData (){
         String d = String.valueOf(dia);
         String m = String.valueOf(mes);
@@ -31,5 +33,9 @@ public class Data {
         
         String dataPadrao = d.concat("/").concat(m).concat("/").concat(a);
         return dataPadrao;
+    }
+    
+    void imprimirDataFormatada() {
+        System.out.println(obterDataFormatada());
     }
 }

@@ -7,7 +7,7 @@ public class PrimeiroTrauma {
     
     public static void main(String[] args) {
         
-        PrimeiroTrauma p = new PrimeiroTrauma();
+       PrimeiroTrauma p = new PrimeiroTrauma();
        System.out.println(p.a);
      
        

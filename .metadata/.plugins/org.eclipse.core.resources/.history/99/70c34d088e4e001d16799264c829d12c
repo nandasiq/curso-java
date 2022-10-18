@@ -1,0 +1,18 @@
+package classe.desafio;
+
+public class Pessoa {
+    
+    String nome = "";
+    double pesoP;
+    
+    Pessoa (String nome, double pesoP) {
+        this.nome = nome;
+        this.pesoP = pesoP;
+    }
+
+    
+    double comer() {
+        
+        double total = pesoP + this.
+        return total;
+}
