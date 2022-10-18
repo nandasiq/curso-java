@@ -15,7 +15,7 @@ public class Pessoa {
     }
     
     String apresentar() {
-        return "Oi, meu nome e " + nome + ". Eu peso " + pesoP;
+        return "Oi, meu nome e " + this.nome + ". Eu peso " + this.pesoP;
     }
     
     //minha solucao que estava certa.
