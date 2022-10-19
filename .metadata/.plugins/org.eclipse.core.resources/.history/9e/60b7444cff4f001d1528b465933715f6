@@ -22,13 +22,5 @@ public class Pilha {
         
         System.out.println(livros.isEmpty());
         
-        livros.add("O Pequeno Principe 2");
-        livros.push("Minha amiga Genial 2");
-        livros.push("Torto Arado 2");
-        System.out.println(livros.isEmpty());
-        for (String livro: livros) {
-            System.out.println(livro);
-        }
-        
     }
 }

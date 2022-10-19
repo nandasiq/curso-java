@@ -22,12 +22,12 @@ public class Pilha {
         
         System.out.println(livros.isEmpty());
         
-        livros.add("O Pequeno Principe 2");
-        livros.push("Minha amiga Genial 2");
-        livros.push("Torto Arado 2");
+        livros.add("O Pequeno Principe");
+        livros.push("Minha amiga Genial");
+        livros.push("Torto Arado");
         System.out.println(livros.isEmpty());
         for (String livro: livros) {
-            System.out.println(livro);
+            System.out.println(livros);
         }
         
     }
