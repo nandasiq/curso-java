@@ -1,0 +1,25 @@
+package colecoes;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Fila {
+    public static void main(String[] args) {
+        
+        Queue<String> fila = new LinkedList<>();
+        
+        
+        // add e offer adicionam elemento na fila.
+        // Se a fila cheia: add causa excessao; Offer retorna false
+        fila.add("Ana");
+        fila.offer("Bia");
+        fila.add("Carlos");
+        fila.offer("Daniel");
+        fila.add("Rafaela");
+        fila.offer("Gui");
+        
+        System.out.println(fila.peek());
+        System.out.println(fila.element());
+    }
+
+}
