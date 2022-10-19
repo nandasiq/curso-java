@@ -1,0 +1,20 @@
+package colecoes;
+
+import java.util.HashSet;
+
+public class ConjuntoBaguncado {
+
+    public static void main(String[] args) {
+        
+        HashSet conjunto = new HashSet();
+        
+        conjunto.add(1.2); //java transforma esse tipo primitivo em classe primitiva. de double -> Double
+        conjunto.add(true);
+        conjunto.add("Teste");
+        conjunto.add(1);
+        conjunto.add('x'); 
+        
+        System.out.println("tamanho e" + conjunto.size());
+             
+    }
+}
