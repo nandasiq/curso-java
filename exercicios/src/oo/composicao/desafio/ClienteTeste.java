@@ -14,13 +14,25 @@ public class ClienteTeste {
         Produto produtoCaneta = new Produto("Caneta", 5.8);
         Produto produtoLapis = new Produto("Lapis", 2.5);
         
-        Item item1 = new Item(produtoCaneta, 3);
-        Item item2 = new Item(produtoLapis, 2);
+//        Item item1 = new Item(produtoCaneta, 3);
+//        Item item2 = new Item(produtoLapis, 2);
+//        Item item3 = new Item(produtoCaneta, 4);
+//        Item item4 = new Item(produtoLapis, 6);
         
         
-        compra1.adicionarItens(new Item(produtoCaneta, 5));
+        compra1.adicionarItem(new Item(produtoCaneta, 5));
+        compra1.adicionarItem("Notebook", 2000, 2);
+        compra2.adicionarItem(new Produto("Agenda", 9.25), 1);
+        compra2.adicionarItem("Tesoura", 6.8, 3);
+        cliente1.adicionarCompra(compra2);
+       
         
-        //System.out.println(compra1.obterTotalCompra(items[2]));
+        System.out.println(cliente1.nome);
+        
+        System.out.println(compra1.obterValorTotal());
+        System.out.println(compra1.obterValorTotal());
+        System.out.println(compra2.obterValorTotal());
+        System.out.println(compra2.obterValorTotal());
         
         
     }

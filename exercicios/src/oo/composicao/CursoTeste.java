@@ -24,14 +24,14 @@ public class CursoTeste {
     aluno2.adicionarCurso(curso3);
     aluno3.adicionarCurso(curso3);
     
-    for(Aluno aluno: curso3.alunos) {
-        System.out.printf("Estou matriculado no %s", curso3.nome);
+    for(Aluno aluno: curso2.alunos) {
+        System.out.printf("Estou matriculado no %s", curso2.nome);
         System.out.printf(" e meu nome e %s.\n",  aluno.nome);
     }
     
-    System.out.println(aluno1.cursos.get(0).alunos);
+    System.out.println(aluno1.cursos.get(1).alunos);
     
-    Curso cursoEncontrado = aluno1.obterCursoPorNome("Security");
+    Curso cursoEncontrado = aluno1.obterCursoPorNome("Java");
     
     if(cursoEncontrado != null) {
         System.out.println(cursoEncontrado.nome);

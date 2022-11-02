@@ -8,14 +8,24 @@ public class Compra {
 
     List<Item> itens = new ArrayList<>();
     
-   
     
-    void adicionarItens (Item item) {
+    void adicionarItem (Item item) {
         this.itens.add(item);
     }
- 
-    public double obterTotalCompra(Item item) {
-        double valorCompra = item.produto.preco * item.quantidade;
-        return valorCompra;
+    void adicionarItem (Produto p, int quantidade) {
+        this.itens.add(new Item(p, quantidade));
+    }
+    void adicionarItem(String nome, double preco, int quantidade) {
+        var produto = new Produto(nome, preco);
+        this.itens.add(new Item(produto, quantidade));
+    }
+    
+    double obterValorTotal() {
+        double total = 0; 
+        
+        for(Item itemTemporario: itens) {
+            total += item.produto.preco * item.quantidade;
+        }
+        return total;
     }
 }
