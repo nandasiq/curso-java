@@ -20,7 +20,7 @@ public class ClienteTeste {
         
         compra1.adicionarItens(new Item(produtoCaneta, 5));
         
-        System.out.println(compra1.obterTotalCompra(items[2]));
+        //System.out.println(compra1.obterTotalCompra(items[2]));
         
         
     }
