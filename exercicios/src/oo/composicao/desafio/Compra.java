@@ -24,7 +24,7 @@ public class Compra {
         double total = 0; 
         
         for(Item itemTemporario: itens) {
-            total += item.produto.preco * item.quantidade;
+            total += itemTemporario.produto.preco * itemTemporario.quantidade;
         }
         return total;
     }

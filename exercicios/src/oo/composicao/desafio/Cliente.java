@@ -13,15 +13,13 @@ public class Cliente {
     
     void adicionarCompra(Compra compra) {
         this.compras.add(compra);
-                
     }
-    
     
     double obterValorTotal() {
         double total = 0;
         
         for (Compra compraTemporaria: compras) {
-            total += compra.obterTotalCompra();
+            total += compraTemporaria.obterValorTotal();
         }
         
         return total;
