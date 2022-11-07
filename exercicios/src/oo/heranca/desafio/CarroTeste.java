@@ -5,7 +5,9 @@ public class CarroTeste {
     public static void main(String[] args) {
         
         Carro fusca = new Fusca();
-        Carro troller = new Troller();
+        
+        
+        Carro troller = new Troller(200);
         
         System.out.println(fusca.velocidadeAtual);
         System.out.println(troller.velocidadeAtual);

@@ -8,9 +8,7 @@ public class Jogo {
         monstro.x = 10;
         monstro.y = 20;
         
-        Jogador heroi = new Heroi();
-        heroi.x = 11;
-        heroi.y = 20;
+        Jogador heroi = new Heroi(11, 20);
         
         System.out.println("Monstro tem " + monstro.vida);
         System.out.println("Heroi tem " + heroi.vida);
