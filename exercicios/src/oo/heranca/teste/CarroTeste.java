@@ -1,4 +1,8 @@
-package oo.heranca.desafio;
+package oo.heranca.teste;
+
+import oo.heranca.desafio.Carro;
+import oo.heranca.desafio.Fusca;
+import oo.heranca.desafio.Troller;
 
 public class CarroTeste {
 
@@ -9,8 +13,8 @@ public class CarroTeste {
         
         Carro troller = new Troller(200);
         
-        System.out.println(fusca.velocidadeAtual);
-        System.out.println(troller.velocidadeAtual);
+        System.out.println(fusca.getVelocidadeAtual());
+        System.out.println(troller.getVelocidadeAtual());
         
         fusca.acelerar();
         fusca.acelerar();
@@ -20,8 +24,8 @@ public class CarroTeste {
         troller.acelerar();
         troller.acelerar();
 
-        System.out.println(fusca.velocidadeAtual);
-        System.out.println(troller.velocidadeAtual);
+        System.out.println(fusca.getVelocidadeAtual());
+        System.out.println(troller.getVelocidadeAtual());
         
         fusca.frear();
         fusca.frear();
@@ -33,8 +37,8 @@ public class CarroTeste {
         troller.frear();
         troller.frear();
         
-        System.out.println(fusca.velocidadeAtual);
-        System.out.println(troller.velocidadeAtual);
+        System.out.println(fusca);
+        System.out.println(troller);
     }
     
 }

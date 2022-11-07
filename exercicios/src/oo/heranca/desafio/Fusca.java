@@ -1,11 +1,11 @@
 package oo.heranca.desafio;
 
 public class Fusca extends Carro{
-    Fusca() {
+    public Fusca() {
         this(190);
     }
 
-    Fusca(int x) {
+    public Fusca(int x) {
         super(x);
     }
 }

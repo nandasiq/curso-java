@@ -2,7 +2,7 @@ package oo.heranca.desafio;
 
 public class Troller extends Carro {
     
-    Troller (int x) {
+    public Troller (int x) {
         super(x);
         delta = 15;
     }

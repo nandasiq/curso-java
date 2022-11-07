@@ -2,28 +2,38 @@ package oo.heranca.desafio;
 
 public class Carro {
     
-    final int VELOCIDADE_MAXIMA;
-    int velocidadeAtual = 0;
-    int delta = 5;
+    public final int VELOCIDADE_MAXIMA;
+    private int velocidadeAtual = 0;
+    protected int delta = 5;
     
-    Carro(int velocidadeMaxima){
+    protected Carro(int velocidadeMaxima){
         VELOCIDADE_MAXIMA = velocidadeMaxima;
     }
     
-    void acelerar(){
-        if(velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
-            velocidadeAtual = VELOCIDADE_MAXIMA;
+    public void acelerar(){
+        if(getVelocidadeAtual() + delta > VELOCIDADE_MAXIMA) {
+            setVelocidadeAtual(VELOCIDADE_MAXIMA);
         } else {
-            velocidadeAtual += delta;
-        }
-        
-    }
-    
-    void frear(){
-        if(velocidadeAtual > 0) {
-            velocidadeAtual -= 5;
+            setVelocidadeAtual(getVelocidadeAtual() + delta);
         }
     }
     
+    public void frear(){
+        if(getVelocidadeAtual() > 0) {
+            setVelocidadeAtual(getVelocidadeAtual() - 5);
+        }
+    }
+
+    public int getVelocidadeAtual() {
+        return velocidadeAtual;
+    }
+
+    public void setVelocidadeAtual(int velocidadeAtual) {
+        this.velocidadeAtual = velocidadeAtual;
+    }
+    
+    public String toString() {
+        return "Velocidade atual e: " + velocidadeAtual;
+    }
 
 }
