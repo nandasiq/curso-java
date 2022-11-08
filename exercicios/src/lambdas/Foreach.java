@@ -13,8 +13,8 @@ public class Foreach {
         for(String nome: aprovados) {
             System.out.println(nome);
         }
-        System.out.println("\nLambda 01: ");
         
+        System.out.println("\nLambda 01: ");
         aprovados.forEach((nome) -> {System.out.println(nome + "!!"); });
         
        // forma simplificada. Por nome ser o unico parametro passado, dispensa
@@ -26,9 +26,20 @@ public class Foreach {
         // passa referencia para o metodo como parametron para o for each
         // e automaticamente, para cada elemtento da lista foi passado como 
         // parametro para o println do syso
-        System.out.println("\nMethod Reference: ");
+        System.out.println("\nMethod Reference 01: ");
         aprovados.forEach(System.out::println);
         
+        System.out.println("\nLambda 02: ");
+        aprovados.forEach(nome -> meuImprimir(nome));
+        
+        System.out.println("\nMethod Reference 02: ");
+        aprovados.forEach(Foreach::meuImprimir);
+        
     }
+    
+    static void meuImprimir(String nome) {
+        System.out.println("Ola, meu nome e " + nome);
+    }
+    
 
 }
