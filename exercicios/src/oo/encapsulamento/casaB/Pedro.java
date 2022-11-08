@@ -1,6 +1,6 @@
-package oo.emcapsulamento.casaB;
+package oo.encapsulamento.casaB;
 
-import oo.emcapsulamento.casaA.Ana;
+import oo.encapsulamento.casaA.Ana;
 
 public class Pedro extends Ana{
     

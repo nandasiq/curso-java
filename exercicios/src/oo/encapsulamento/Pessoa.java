@@ -1,4 +1,4 @@
-package oo.emcapsulamento;
+package oo.encapsulamento;
 
 public class Pessoa {
 
