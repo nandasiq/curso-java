@@ -11,7 +11,8 @@ public class CarroTeste {
         Carro fusca = new Fusca();
         
         
-        Carro troller = new Troller(200);
+        Troller troller = new Troller(200);
+        troller.ligarTurbo();
         
         System.out.println(fusca.getVelocidadeAtual());
         System.out.println(troller.getVelocidadeAtual());

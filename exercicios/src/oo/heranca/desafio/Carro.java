@@ -4,17 +4,17 @@ public class Carro {
     
     public final int VELOCIDADE_MAXIMA;
     private int velocidadeAtual = 0;
-    protected int delta = 5;
+    private int delta = 5;
     
     protected Carro(int velocidadeMaxima){
         VELOCIDADE_MAXIMA = velocidadeMaxima;
     }
     
     public void acelerar(){
-        if(getVelocidadeAtual() + delta > VELOCIDADE_MAXIMA) {
+        if(getVelocidadeAtual() + getDelta() > VELOCIDADE_MAXIMA) {
             setVelocidadeAtual(VELOCIDADE_MAXIMA);
         } else {
-            setVelocidadeAtual(getVelocidadeAtual() + delta);
+            setVelocidadeAtual(getVelocidadeAtual() + getDelta());
         }
     }
     
@@ -34,6 +34,14 @@ public class Carro {
     
     public String toString() {
         return "Velocidade atual e: " + velocidadeAtual;
+    }
+
+    public int getDelta() {
+        return delta;
+    }
+
+    public void setDelta(int delta) {
+        this.delta = delta;
     }
 
 }
