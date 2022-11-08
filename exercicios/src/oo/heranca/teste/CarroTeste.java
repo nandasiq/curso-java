@@ -40,6 +40,8 @@ public class CarroTeste {
         
         System.out.println(fusca);
         System.out.println(troller);
+        
+        System.out.println("Velocidade do ar " + troller.velocidadelAr());
     }
     
 }

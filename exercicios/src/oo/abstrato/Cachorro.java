@@ -6,11 +6,11 @@ public class Cachorro extends Mamifero {
     public String mamar() {
         return "Toma leite";
     }
-    
-    @Override
-    public String mover() {
-        return "Usando as patas";
-    }
+//    
+//    @Override
+//    public String mover() {
+//        return "Usando as patas";
+//    }
     
     
 }
