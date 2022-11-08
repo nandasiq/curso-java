@@ -19,6 +19,9 @@ public class CalculoTeste2 {
         soma = (x, y) -> x * y;
         System.out.println("Impresso com lambda reduzida e alterando var soma " 
         + soma.executar(3, 3));
+        
+        System.out.println(soma.legal());
+        System.out.println(Calculo.massa());
     }
 
 }
