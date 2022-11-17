@@ -14,7 +14,7 @@ public class CalculoTeste3 {
         
         
         BinaryOperator<Integer> soma2 = (x, y) -> x * y;
-        System.out.println("Impresso com lambda reduzida e alterando var soma " 
+        System.out.println("Impresso com lambda reduzida e alterando var soma para Integer " 
         + soma2.apply(3, 3));
         
         
