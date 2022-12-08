@@ -43,7 +43,7 @@ public class Desafio {
                  
          
          Consumer<Double> precoFormatado = num -> System.out.printf("\nR$%.2f", num);
-         precoFormatado.accept(pFinal);
+       precoFormatado.accept(pFinal);
          
         
         // apenas para teste e conhecimento
@@ -58,6 +58,7 @@ public class Desafio {
 //
 //        UnaryOperator<Double> precoFrete = preco -> preco >= 3000 ? (preco + 100) : (preco + 50);
 //
+//        Consumer<Double> precoFormatado = num -> System.out.printf("\nR$%.2f", num);
 //
 //        double precoFinal = precoDesconto
 //                .andThen(precoImposto)
