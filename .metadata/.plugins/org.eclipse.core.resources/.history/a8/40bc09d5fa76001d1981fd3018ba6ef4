@@ -43,8 +43,7 @@ public class Desafio {
                  
          
          Consumer<Double> precoFormatado = num -> System.out.printf("\nR$%.2f", num);
-       precoFormatado.accept(pFinal);
-         
+         System.out.println(precoFormatado);
         
         // apenas para teste e conhecimento
 //        Consumer<Produto> precoComDesconto = prod -> System.out.println(prod.preco * (1 - prod.desconto));
@@ -65,7 +64,7 @@ public class Desafio {
 //                .andThen(precoFrete)
 //                .apply(p);
 //
-
+//        precoFormatado.accept(precoFinal);
 
     }
 

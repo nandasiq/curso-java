@@ -33,18 +33,6 @@ public class Desafio {
                 
          Double pImposto = precoComImposto.apply(pDesconto, 1.085);
          System.out.println(pImposto);
-         
-         
-         UnaryOperator<Double> precoComFrete = 
-                 preco -> preco >= 3000 ? preco + 100 : preco + 50; 
-                  
-         Double pFinal = precoComFrete.apply(pImposto);
-         System.out.println(pFinal);
-                 
-         
-         Consumer<Double> precoFormatado = num -> System.out.printf("\nR$%.2f", num);
-       precoFormatado.accept(pFinal);
-         
         
         // apenas para teste e conhecimento
 //        Consumer<Produto> precoComDesconto = prod -> System.out.println(prod.preco * (1 - prod.desconto));
@@ -65,7 +53,7 @@ public class Desafio {
 //                .andThen(precoFrete)
 //                .apply(p);
 //
-
+//        precoFormatado.accept(precoFinal);
 
     }
 
